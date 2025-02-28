@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">College Events</a>
+            <ul class="navbar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Upcoming Events</h1>
+    </header>
+
+    <main class="main-content">
+        <div id="events-grid">
+            </div>
+
+        <div id="event-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <img id="modal-image" src="./images/tech_talk.png" alt="Event Image">
+                <h2 id="modal-title"></h2>
+                <p id="modal-date-time"></p>
+                <p id="modal-location"></p>
+                <p id="modal-description"></p>
+                <div class="ticket-selection">
+                    <label for="ticket-quantity">Tickets:</label>
+                    <button id="decrease-tickets">-</button>
+                    <span id="ticket-quantity">0</span>
+                    <button id="increase-tickets">+</button>
+                </div>
+                <p>Total Price: <span id="total-price" class="price"></span></p>
+                <button id="book-tickets">Book Tickets</button>
+            </div>
+        </div>
+    </main>
+
+    <section class="contact-form-section">
+        <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <div class="footer-content">
+            <p>&copy; 2023 College Events. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

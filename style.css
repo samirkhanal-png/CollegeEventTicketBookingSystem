@@ -1,0 +1,316 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light, soft background */
+    color: #343a40; /* Dark gray text for readability */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40; /* Dark gray navbar */
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    font-size: 1.6em;
+    font-weight: 600; /* Semi-bold for emphasis */
+    text-decoration: none;
+    color: #00b8d4; /* Teal accent color */
+    font-family: 'Montserrat', sans-serif; /* A bold font for the brand */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light gray for menu items */
+    transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: #00b8d4; /* Teal hover effect */
+}
+
+/* Header */
+.page-header {
+    background-color: #e8f5e9; /* Very light green background */
+    text-align: center;
+    padding: 3em 0;
+}
+
+.page-header h1 {
+    font-size: 2.8em;
+    font-weight: 700; /* Bold header */
+    color: #2e7d32; /* Darker green header text */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+#events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased card width */
+    gap: 30px;
+}
+
+/* Event Card */
+.event-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced hover effect */
+}
+
+.event-card img {
+    width: 100%;
+    height: 250px; /* Increased image height */
+    object-fit: cover;
+}
+
+.event-card-content {
+    padding: 20px;
+}
+
+.event-card h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #263238; /* Darker card header */
+}
+
+.event-card p {
+    margin: 8px 0;
+    color: #546e7a; /* Medium gray for details */
+}
+
+.price {
+    font-weight: 700;
+    color: #009688; /* Teal price color */
+    font-size: 1.1em;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker modal overlay */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 8% auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 85%;
+    max-width: 700px;
+    position: relative;
+}
+
+.close-button {
+    color: #757575;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #212121;
+}
+
+.ticket-selection {
+    margin-top: 25px;
+}
+
+.ticket-selection label {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.ticket-selection button {
+    padding: 8px 15px;
+    margin: 0 8px;
+    cursor: pointer;
+    border: 1px solid #b0bec5;
+    border-radius: 5px;
+    background-color: #eceff1;
+    transition: background-color 0.3s;
+}
+
+.ticket-selection button:hover {
+    background-color: #cfd8dc;
+}
+
+#modal-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#book-tickets {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#book-tickets:hover {
+    background-color: #00796b;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+    }
+}
+
+/* Footer */
+.page-footer {
+    background-color: #343a40;
+    color: #e0e0e0;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00b8d4;
+}
+/* Contact Form Section */
+.contact-form-section {
+    background-color: #f0f4f8; /* Light blue-gray background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form-section h2 {
+    color: #29434e; /* Darker blue-gray */
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #37474f;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b0bec5;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    background-color: #00838f; /* Slightly darker teal */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #006064; /* Even darker teal */
+}
+
+/* Responsive adjustments for contact form */
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 0 10px;
+    }
+}
