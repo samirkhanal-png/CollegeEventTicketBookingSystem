@@ -6,7 +6,7 @@ const events = [
         time: "6:00 PM",
         location: "Lecture Hall A",
         price: 5,
-        imageUrl: "images/event1.png",
+        imageUrl: "event1.png",
         description: "Join us for an insightful talk on the future of AI and its impact on society.",
     },
     {
@@ -16,7 +16,7 @@ const events = [
         time: "8:00 PM",
         location: "Student Union Hall",
         price: 10,
-        imageUrl: "images/event2.jpg",
+        imageUrl: "event2.jpg",
         description: "Enjoy a night filled with live music performances by talented college bands.",
     },
     {
@@ -36,7 +36,7 @@ const events = [
         time: "7:00 PM",
         location: "Innovation Lab",
         price: 0,
-        imageUrl: "images/event4.jpg",
+        imageUrl: "event4.jpg",
         description: "Witness the final projects of our coding bootcamp graduates and network with industry professionals.",
     },
     {
@@ -46,7 +46,7 @@ const events = [
         time: "10:00 AM",
         location: "College Sports Grounds",
         price: 3,
-        imageUrl: "images/event5.jpg",
+        imageUrl: "event5.jpg",
         description: "Participate in or watch various sports events and cheer for your favorite teams.",
     }
 ];
