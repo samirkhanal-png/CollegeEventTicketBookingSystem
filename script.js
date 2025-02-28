@@ -26,7 +26,7 @@ const events = [
         time: "2:00 PM",
         location: "Art Studio",
         price: 8,
-        imageUrl: "images/event3.jpg",
+        imageUrl: "event3.jpg",
         description: "Get creative and learn new art and craft techniques in this hands-on workshop.",
     },
     {
@@ -36,7 +36,7 @@ const events = [
         time: "7:00 PM",
         location: "Innovation Lab",
         price: 0,
-        imageUrl: "event4.jpg",
+        imageUrl: "event5.jpg",
         description: "Witness the final projects of our coding bootcamp graduates and network with industry professionals.",
     },
     {
@@ -46,7 +46,7 @@ const events = [
         time: "10:00 AM",
         location: "College Sports Grounds",
         price: 3,
-        imageUrl: "event5.jpg",
+        imageUrl: "event4.jpg",
         description: "Participate in or watch various sports events and cheer for your favorite teams.",
     }
 ];
